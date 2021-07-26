@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 
-import { Button, Icon, InputGroup, Position, TextArea, Toaster } from '@blueprintjs/core';
+import { Button, InputGroup } from '@blueprintjs/core';
 import { useHistory } from 'react-router-dom';
+
+import '../externalCSS/ExternalCSS.css'
 
 export default function LandingPage() {
 
@@ -26,9 +28,9 @@ export default function LandingPage() {
     let history = useHistory();
     return (
         <div>
-            <article className="vh-100 dt w-100 bg-near-white">
+            <article className="_maindiv_ vh-100 dt w-100 bg-near-white">
                 <div className="dtc v-mid tc white ph3 ph4-l">
-                    <div className="bp3-card mw7 center black">
+                    <div className="bp3-card mw7 center black br5">
                         Job Application Tracker
                         <div class="cf flex items-center">
                             <div class="fl w-100 w-30-l w-30-m tr pr2">
@@ -139,7 +141,7 @@ export default function LandingPage() {
                                 text="save"
                                 icon="saved"
                                 intent="success"
-                                // disabled={ (company) && (experience) && (position) && (deadline) && (applyPlatform) !== '' ? false : true}
+                                disabled={ (company) && (experience) && (position) && (deadline) && (applyPlatform) !== '' ? false : true}
                                 onClick={() => { sendEmail(); history.push('./list') }}
                             />
                         </div>
