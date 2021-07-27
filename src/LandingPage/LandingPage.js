@@ -13,7 +13,7 @@ export default function LandingPage() {
         localStorage.setItem('experience', experience)
         localStorage.setItem('deadline', deadline)
         localStorage.setItem('platform', platform)
-        console.log('anything')
+        // console.log('anything')
     }
 
     const applyPlatform = [ 'facebook group', 'e-mail', 'company website', 'for reference' ]
@@ -33,17 +33,17 @@ export default function LandingPage() {
                     <div className="bp3-card mw7 center black br5">
                         Job Application Tracker
                         <div class="cf flex items-center">
-                            <div class="fl w-100 w-30-l w-30-m tr pr2">
+                            <div class="fl w-30 w-30-l w-30-m tr pr2">
                                 <div className="cf">
-                                    <div className="fl w-100 pa3 b f5 tr">Position</div>
-                                    <div className="fl w-100 pa3 b f5 tr">Company</div>
-                                    <div className="fl w-100 pa3 b f5 tr">Experience</div>
-                                    <div className="fl w-100 pa3 b f5 tr">Date of Apply</div>
-                                    <div className="fl w-100 pa3 b f5 tr">Deadline</div>
-                                    <div className="fl w-100 pa3 b f5 tr">Apply Platform</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Position</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Company</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Experience</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Date of Apply</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Deadline</div>
+                                    <div className="fl w-100 pa3-l pa3-m pa2 b f5 tr">Apply Platform</div>
                                 </div>
                             </div>
-                            <div class="fl w-100 w-70-l w-70-m tc">
+                            <div class="fl w-70 w-70-l w-70-m tc">
                                 <form className="cf" >
                                     <div className="fl w-100">
                                         <InputGroup
